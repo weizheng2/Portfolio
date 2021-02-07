@@ -88,14 +88,11 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.table-centerLeft {
- 
-}
 
 table{
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
-
   border-spacing: 1rem;
   width: 350px;
 }
