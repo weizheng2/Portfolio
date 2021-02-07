@@ -89,12 +89,13 @@ p {
   margin-bottom: 1rem;
 }
 .table-centerLeft {
-  margin: auto;
+ 
 }
 
 table{
+  margin: auto;
   text-align: left;
-  margin: 0;
+
   border-spacing: 1rem;
   width: 350px;
 }
