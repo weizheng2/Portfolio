@@ -1,7 +1,7 @@
 body {
   background: #fff;
   color: rgba(255, 255, 255, 0.4);
-  background: #222;
+  background: #1a1a1a;
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300; }
@@ -41,9 +41,9 @@ a {
   -webkit-transition: .3s all;
   -o-transition: .3s all;
   transition: .3s all;
-  color: #bac964; }
+  color: #a2c964; }
   a:hover, a:focus, a:active {
-    color: #b2c251;
+    color: #97c251;
     text-decoration: none; }
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
@@ -159,10 +159,10 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); }
+    background: #1a1a1a; }
   .site-hero h1 {
     font-weight: 200;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: block; }
     .site-hero h1 strong {
       font-weight: 800; }
@@ -183,6 +183,11 @@ a {
   padding-top: 4em;
   padding-bottom: 4em; }
 
+.about-me-font {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+}
+  
 .section-heading {
   margin-bottom: 40px;
   position: relative;
@@ -201,8 +206,8 @@ a {
     transform: translateX(-50%); }
 
 .site-section-personal-projects {
-  padding-top: 0em;
-  padding-bottom: 4em; }
+  padding-top: 2em;
+  padding-bottom: 3em; }
 
 .lead {
   font-weight: 200;

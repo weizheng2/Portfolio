@@ -167,26 +167,47 @@
 
 
 	// Page Nav
+	// var clickMenu = function() {
+
+	// 	$('.navbar-nav a:not([class="external"])').click(function(event){
+
+	// 		var section = $(this).data('nav-section'),
+	// 			navbar = $('.navbar-nav');
+	// 			if (isMobile.any()) {
+	// 				$('.navbar-toggle').click();
+	// 			}
+	// 			if ( $('[data-section="' + section + '"]').length ) {
+	// 		    	$('html, body').animate({
+	// 		        	scrollTop: $('[data-section="' + section + '"]').offset().top
+	// 		    	}, 500, 'easeInOutExpo');
+	// 		   }
+
+	// 	    event.preventDefault();
+	// 	    return false;
+	// 	});
+	// };
+
 	var clickMenu = function() {
-
-		$('.navbar-nav a:not([class="external"])').click(function(event){
-
-			var section = $(this).data('nav-section'),
-				navbar = $('.navbar-nav');
-				if (isMobile.any()) {
-					$('.navbar-toggle').click();
-				}
-				if ( $('[data-section="' + section + '"]').length ) {
-			    	$('html, body').animate({
-			        	scrollTop: $('[data-section="' + section + '"]').offset().top
-			    	}, 500, 'easeInOutExpo');
-			   }
-
-		    event.preventDefault();
-		    return false;
+		$('.navbar-nav a:not([class="external"])').click(function(event) {
+			var section = $(this).data('nav-section');
+			if ($(section).length) {
+				$('html, body').animate({
+					scrollTop: $(section).offset().top
+				}, 500, 'easeInOutExpo');
+			}
+			if (isMobile.any()) {
+				$('.navbar-toggler').click();
+			}
+			// Check if the clicked link has a href attribute
+			if ($(this).attr('href')) {
+				// Allow the default link behavior to proceed
+				return true;
+			} else {
+				// Prevent default behavior for non-link elements
+				event.preventDefault();
+				return false;
+			}
 		});
-
-
 	};
 
 	// Reflect scrolling in navigation
