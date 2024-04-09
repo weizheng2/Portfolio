@@ -187,6 +187,7 @@
 	// 	});
 	// };
 
+
 	var clickMenu = function() {
 		$('.navbar-nav a:not([class="external"])').click(function(event) {
 			var section = $(this).data('nav-section');
@@ -349,9 +350,18 @@
 		smoothScroll();
 		portfolioMasonry();
 	});
-
-	
-
-
 })();
 
+
+var toggleLanguage = function(lang) {
+	const elementsEn = document.querySelectorAll('.lang-en');
+	const elementsEs = document.querySelectorAll('.lang-es');
+	
+	if (lang === 'en') {
+		elementsEn.forEach(element => element.classList.remove('d-none'));
+		elementsEs.forEach(element => element.classList.add('d-none'));
+	} else if (lang === 'es') {
+		elementsEn.forEach(element => element.classList.add('d-none'));
+		elementsEs.forEach(element => element.classList.remove('d-none'));
+	}
+};
