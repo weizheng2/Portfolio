@@ -353,10 +353,13 @@
 })();
 
 
-// Global variable to store the current language
-var currentLanguage = 'en';
+var toggleLanguage = function(changeLanguage = true) {
 
-var toggleLanguage = function(lang) {
+	var lang = localStorage.getItem('selectedLanguage') || 'es';
+
+	if(changeLanguage)
+		lang = lang == 'es' ? 'en' : 'es';
+
     const elementsEn = document.querySelectorAll('.lang-en');
     const elementsEs = document.querySelectorAll('.lang-es');
     
@@ -368,19 +371,11 @@ var toggleLanguage = function(lang) {
         elementsEs.forEach(element => element.classList.remove('d-none'));
     }
 
-    currentLanguage = lang;
-
     // Save the selected language to localStorage
     localStorage.setItem('selectedLanguage', lang);
 
-    // Update the display of current language
-    document.getElementById('currentLanguageDisplay').textContent = currentLanguage;
+    document.getElementById('currentLanguageDisplayInNavButton').textContent = lang == 'es' ? 'english' : 'español';
 };
 
-// Retrieve the selected language from localStorage when the page loads
-var selectedLanguage = localStorage.getItem('selectedLanguage');
-if (selectedLanguage) {
-    toggleLanguage(selectedLanguage);
-} else {
-    toggleLanguage('en');
-}
+// Call toggle language on restart
+toggleLanguage(false);

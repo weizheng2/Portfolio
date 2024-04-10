@@ -2008,6 +2008,11 @@ textarea.form-control {
   .btn:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
+    
+.make-pointer{
+  cursor: pointer;
+}
+
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
