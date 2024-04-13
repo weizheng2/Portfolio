@@ -404,6 +404,13 @@ mark,
   max-width: 100%;
   height: auto; }
 
+.img-fluid-reduced {
+  display: block; 
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -472,6 +479,10 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1240px; } }
 
 .container-fluid {
   width: 100%;

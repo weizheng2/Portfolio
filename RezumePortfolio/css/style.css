@@ -150,7 +150,7 @@ a {
   overflow: hidden; }
   .site-hero, .site-hero .row {
     height: 65vh;
-    min-height: 600px; }
+    min-height: 700px; }
   .site-hero:before {
     content: "";
     position: absolute;
@@ -181,7 +181,7 @@ a {
 
 .site-section {
   padding-top: 4em;
-  padding-bottom: 4em; }
+  padding-bottom: 0em; }
 
 .about-me-font {
   font-size: 18px;
@@ -206,8 +206,8 @@ a {
     transform: translateX(-50%); }
 
 .site-section-personal-projects {
-  padding-top: 2em;
-  padding-bottom: 3em; }
+  padding-top: 4em;
+  padding-bottom: 2em; }
 
 .lead {
   font-weight: 200;
