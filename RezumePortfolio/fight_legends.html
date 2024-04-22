@@ -82,12 +82,11 @@ This was the initial major change I had to make, and had to use asynchronous loa
 Referral system that allows players to invite others and earn rewards. This feature greatly increased the number of new players.
 
 -Event:
-Made the first event in the game. Implemented a system where players could enter a same room, and had to make sure all request where ordered and didnt had any race condition or that entered at the same time
- new models, keep the combat state since, the first mode where multiples players could try to enter, so we had to add a error or filters
-Crypta Tesoro -> ok
+Made the first event in the game. Implemented a system where players could enter a shared room, and had to make sure all request were ordered and didnt had any race condition or that entered at the same time
+It had a complete new enemy model and had to keep the combat state since, the first mode where multiples players could try to enter, so we had to add a error or filters
+Within this event I also implemented a special shop where players flipped cards to get random rewards.
 
 -Iap, subscription and bundles ok
-
 
 -Tournaments and rankings:
 Tournaments that different rankings 
@@ -97,17 +96,23 @@ Made a complete tutorial that shows the user all the basic features. It has a co
 The system has an announcer with text lines and images, a screen blocker that only allows clicks on the desired buttons and each part can be decoupled allowing the player to leave and continue after connecting again.
 Also made a combat tutorial that contained instructions for the main possible actions in a combat.
 
--Back system signals
-A 'back' system that can be called with the 'back' button in mobile or in the game interface.
+-Back system
+A 'back' system that allows the user to close pop ups, return to the previous screen, pause the game, etc.
 
 -Builds for different stores, each their own IAP validation
 I was in charge of making the builds for all the different stores.
 Also, added Xsolla, which is a platform that allows payments.
 Xsolla, for purchased
 
--Chat system (mods, block, ban etc) ok 
+-Chat system (mods, block, ban etc)
+Allows the creation of different channels where everyone can post and the possibility to send private messages to other individual users.
+Players can block/unblock other players and if enabled to be a moderator, they have the ability to ban others.
 
--Local and push notifications - 
+-Local and push notifications
+Enabled Local Notifications with Unity Mobile Notifications, for scheduled events
+Push notifications with Firebase, for intants events 
+Also made an internal notification interface for when the player is currently in game and with the screen focused.
+
 -Ads and other plugins 
 
 -Village mode ok
