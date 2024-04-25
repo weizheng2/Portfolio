@@ -75,6 +75,7 @@ Main notable contributions:
 
 -General:
 Make sure any feature or update can be added without disrupting the previous versions. Ensuring the coexistence of multiples versions from the same store or different stores.
+Implemented different A/B testing features, where the game showed different features or with some variations to test which one performed better.
 
 -Addressables:
 Following Google Play build size restriction, we had to find a way to load the assets separately. We tried loading the assets from Amazon Web Services (AWS) and then from our own server but each had their problems.
@@ -85,17 +86,17 @@ This was the initial major change I had to make, and had to use asynchronous loa
 Referral system that allows players to invite others and earn rewards. This feature greatly increased the number of new players.
 
 -Event:
-////Made the first event in the game. Implemented a system where players could enter a shared room, and had to make sure all request were ordered and didnt had any race condition or that entered at the same time
-It had a complete new enemy model and had to keep the combat state since, the first mode where multiples players could try to enter, so we had to add a error or filters
-Within this event I also implemented a special shop where players flipped cards to get random rewards.
+Made the first event in the game. Implemented a system where players could enter undefeated enemy rooms and continue where the other players left.
+Since multiple players could try to enter the room, I had to make sure to only let the first request in avoiding any race condition.
+It had a complete new enemy model and within this event I also added a special shop where players can flip cards to get random rewards.
 
 -Iap, subscription and bundles
 For each store, I had to validate the receipts received in the server after a player buys any IAP. 
 Also, schedule calls to update subscription data and process refunded, canceled or not given IAPs.
 
 -Tournaments and rankings:
-
-Tournaments that different rankings 
+Made a ranking system where players would obtain point from playing a specific game mode. It rewarded special icons for the chat.
+Players can see the rankings changing in real time, current and last weeks positions and a global ranking.
 
 -Tutorial:
 Made a complete tutorial that shows the user all the basic features. It has a continous flow at the start and then it appears again after unlocking new content.
@@ -119,7 +120,7 @@ Push notifications with Firebase for various instant actions.
 Also made an internal notifications interface for when the player is currently in game and with the screen focused.
 
 -Ads and other plugins
-Added advertisement plugins to show rewarded videos and interstitials.
+Added advertisement plugins to show rewarded videos and interstitials. Also controlled in server the probability to show one.
 
 -Village mode
 A village mode, where players can collect and upgrade buildings that provide different improvements. 
