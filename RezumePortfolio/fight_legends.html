@@ -69,26 +69,25 @@ Studio: Dark Curry (Barcelona, Spain)
 Time: November 2021 - Present
 
 Fight Legends, also known as Dark Steel, is the project I was assigned to after finishing my internship with the Studio and becoming a full time programmer.
-Implemented game mechanics, features, plugins, build and submit, etc.
+Implemented game mechanics, features, plugins, etc.
 
 Main notable contributions:
 
 -General:
-Make sure any feature or update can be added without disrupting the previous versions. Ensuring the coexistence of multiples versions from the same store or different stores.
-Implemented different A/B testing features, where the game showed different features or with some variations to test which one performed better.
+Ensure any feature or update can be added without disrupting the previous versions. Allowing the coexistence of multiples versions from the same store or different stores.
+Implemented different A/B testing processes, where the game showed different features or with some variations to test which one performed better.
 
 -Addressables:
-Following Google Play build size restriction, we had to find a way to load the assets separately. We tried loading the assets from Amazon Web Services (AWS) and then from our own server but each had their problems.
-At the end we ended up using the Unity Addressables System and a Google Play Addressables Plugin.
-This was the initial major change I had to make, and had to use asynchronous loadings (UniTask) for the first time which caused a lot of problems. However, this taught me a lot about asynchronous operations.
+Implemented asynchronous asset loading using Unity Addressables System and a custom Google Play Addressables Plugin, overcoming build size restrictions and enhancing performance.
+Previously used Amazon Web Services for storing the assets.
 
 -Referral:
-Referral system that allows players to invite others and earn rewards. This feature greatly increased the number of new players.
+Referral system that allows players to invite others and earn rewards, resulted in a significant increase in new player acquisition.
 
 -Event:
-Made the first event in the game. Implemented a system where players could enter undefeated enemy rooms and continue where the other players left.
-Since multiple players could try to enter the room, I had to make sure to only let the first request in avoiding any race condition.
-It had a complete new enemy model and within this event I also added a special shop where players can flip cards to get random rewards.
+Created the first event in the game. It has a system where players can enter undefeated enemy rooms and continue where the other players left.
+Since multiple players can try to enter the room, I had to make sure to only let the first request in, avoiding any race condition.
+Additionally, it contains a complete new enemy model and a special shop where players can flip cards to get random rewards.
 
 -Iap, subscription and bundles
 For each store, I had to validate the receipts received in the server after a player buys any IAP. 
@@ -99,20 +98,21 @@ Made a ranking system where players would obtain point from playing a specific g
 Players can see the rankings changing in real time, current and last weeks positions and a global ranking.
 
 -Tutorial:
-Made a complete tutorial that shows the user all the basic features. It has a continous flow at the start and then it appears again after unlocking new content.
-The system has an announcer with text lines and images, a screen blocker that only allows clicks on the desired buttons and each part can be decoupled allowing the player to leave and continue after connecting again.
-Also made a combat tutorial that contained instructions for the main possible actions in a combat.
+Designed and implemented a comprehensive tutorial system, guiding players through core game mechanics and combat strategies.
+
+Made a complete tutorial that guides players through core game mechanics and combat strategies. It has a continous flow at the start of the game and then it appears again after unlocking new content.
+The system has an announcer with text lines and images, a screen blocker that only allows clicks on the desired buttons and each part can be decoupled, allowing the player to leave and continue after connecting again.
 
 -Back system
 A 'back' system that allows the user to close pop ups, return to the previous screen, pause the game, etc.
 
--Builds for different stores, each their own IAP validation
-I was in charge of making the builds for all the different stores. Ensuring the compliance of the stores.
-Also, added Xsolla, which is a platform that allows payments.
+-Builds
+I was in charge of making the builds for all the different stores, ensuring the compliance.
+Also integrated payment platform Xsolla, to facilitate transactions across different regions and app stores.
 
 -Chat system (mods, block, ban etc)
-Allows the creation of different channels where everyone can post and the possibility to send private messages to other individual users.
-Players can block/unblock other players and if enabled to be a moderator, they have the ability to ban others.
+Created a chat system where players can either comunicate in global channels or send private messages.
+Players can also block/unblock others and if enabled to be a moderator, they have the ability to ban other players.
 
 -Local and push notifications
 Enabled Local Notifications with Unity Mobile Notifications for scheduled events.
@@ -120,14 +120,14 @@ Push notifications with Firebase for various instant actions.
 Also made an internal notifications interface for when the player is currently in game and with the screen focused.
 
 -Ads and other plugins
-Added advertisement plugins to show rewarded videos and interstitials. Also controlled in server the probability to show one.
+Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.
 
 -Village mode
-A village mode, where players can collect and upgrade buildings that provide different improvements. 
+A village mode, where players can collect and upgrade buildings that provide different boosts for their account. 
 
 -Multiples characters
+Developed a multi-character system, enabling players to create, switch, and manage multiple characters.
 Since the game was designed for one character per user, I had to make plenty of changes and make sure those changes did not affect the production game/server.
-The principal task was to add a system to create, switch and delete characters, and that included restructuring a lot of code that was in the character to the user and viceversa.
 
 
 							<ul>
