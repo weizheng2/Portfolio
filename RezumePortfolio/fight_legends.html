@@ -82,14 +82,14 @@ Implemented asynchronous asset loading using Unity Addressables System and a cus
 Previously used Amazon Web Services for storing the assets.
 
 -Referral:
-Referral system that allows players to invite others and earn rewards, resulted in a significant increase in new player acquisition.
+Referral system that allows players to invite others and earn rewards.
 
 -Event:
 Created the first event in the game. It has a system where players can enter undefeated enemy rooms and continue where the other players left.
 Since multiple players can try to enter the room, I had to make sure to only let the first request in, avoiding any race condition.
 Additionally, it contains a complete new enemy model and a special shop where players can flip cards to get random rewards.
 
--Iap, subscription and bundles
+-IAPs, subscription and bundles
 For each store, I had to validate the receipts received in the server after a player buys any IAP. 
 Also, schedule calls to update subscription data and process refunded, canceled or not given IAPs.
 
@@ -98,7 +98,7 @@ Made a ranking system where players would obtain point from playing a specific g
 Players can see the rankings changing in real time, current and last weeks positions and a global ranking.
 
 -Tutorial:
-Designed and implemented a comprehensive tutorial system, guiding players through core game mechanics and combat strategies.
+Designed and implemented a comprehensive tutorial system, guiding players through core game mechanics, combat actions and main interface screens.
 
 Made a complete tutorial that guides players through core game mechanics and combat strategies. It has a continous flow at the start of the game and then it appears again after unlocking new content.
 The system has an announcer with text lines and images, a screen blocker that only allows clicks on the desired buttons and each part can be decoupled, allowing the player to leave and continue after connecting again.
