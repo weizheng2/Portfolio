@@ -36,8 +36,15 @@
 			<div class="row intro-text align-items-center justify-content-center">
 				<div class="col-md-11 text-center pt-5">
 					<h1 class="site-animate"><strong class="d-block">Fight Legends</strong></h1>
-					<div class="about-me-font">
-						<p>Dark Curry<br />
+					<h2>Dark Curry</h2>	<br />
+					<div class="about-me-font">		
+						<ul class="list-unstyled">
+							<li class="list-unstyled"><b>Type:</b> Professional Experience </li>
+							<li class="list-unstyled"><b>Links:</b> <a href="https://play.google.com/store/apps/details?id=com.darkcurry.darksteel">Google Play</a>, <a href="https://apps.apple.com/us/app/fight-legends-mortal-fighting/id1529416496">App Store</a></li>
+							<li class="list-unstyled"><b>Role:</b> FullStack Programmer</li>
+							<li class="list-unstyled"><b>Studio:</b> Dark Curry (Barcelona, Spain)</li>
+							<li class="list-unstyled"><b>Time:</b> November 2021 - Present</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -46,120 +53,250 @@
 
 	<section class="site-section" id="section-professional">
 		<div class="container">
-		
 			<div class="filters-content">
-				<div class="row grid">
-					<div class="single-portfolio col-sm-4 all">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="images/fight_legends.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-8 all">
-						<div class="d-block">
-		
-								SUMMARY
-Type: Professional Experience
-Platforms: Android/iOS
-Links: Google Play, iOS
-Role:FullStack Programmer
-Studio: Dark Curry (Barcelona, Spain)
-Time: November 2021 - Present
-
-Fight Legends, also known as Dark Steel, is the project I was assigned to after finishing my internship with the Studio and becoming a full time programmer.
+	
+<!-- Fight Legends, also known as Dark Steel, is the project I was assigned to after finishing my internship with the Studio and becoming a full time programmer.
 Implemented game mechanics, features, plugins, etc.
 
 Main notable contributions:
-
--General:
-Ensure any feature or update can be added without disrupting the previous versions. Allowing the coexistence of multiples versions from the same store or different stores.
-Implemented different A/B testing processes, where the game showed different features or with some variations to test which one performed better.
-
--Addressables:
-Implemented asynchronous asset loading using Unity Addressables System and a custom Google Play Addressables Plugin, overcoming build size restrictions and enhancing performance.
-Previously used Amazon Web Services for storing the assets.
-
--Referral:
-Referral system that allows players to invite others and earn rewards.
-
--Event:
-Created the first event in the game. It has a system where players can enter undefeated enemy rooms and continue where the other players left.
-Since multiple players can try to enter the room, I had to make sure to only let the first request in, avoiding any race condition.
-Additionally, it contains a complete new enemy model and a special shop where players can flip cards to get random rewards.
-
--IAPs, subscription and bundles
-For each store, I had to validate the receipts received in the server after a player buys any IAP. 
-Also, schedule calls to update subscription data and process refunded, canceled or not given IAPs.
-
--Tournaments and rankings:
-Made a ranking system where players would obtain point from playing a specific game mode. It rewarded special icons for the chat.
-Players can see the rankings changing in real time, current and last weeks positions and a global ranking.
-
--Tutorial:
-Designed and implemented a comprehensive tutorial system, guiding players through core game mechanics, combat actions and main interface screens.
-
-Made a complete tutorial that guides players through core game mechanics and combat strategies. It has a continous flow at the start of the game and then it appears again after unlocking new content.
-The system has an announcer with text lines and images, a screen blocker that only allows clicks on the desired buttons and each part can be decoupled, allowing the player to leave and continue after connecting again.
-
--Back system
-A 'back' system that allows the user to close pop ups, return to the previous screen, pause the game, etc.
-
--Builds
-I was in charge of making the builds for all the different stores, ensuring the compliance.
-Also integrated payment platform Xsolla, to facilitate transactions across different regions and app stores.
-
--Chat system (mods, block, ban etc)
-Created a chat system where players can either comunicate in global channels or send private messages.
-Players can also block/unblock others and if enabled to be a moderator, they have the ability to ban other players.
-
--Local and push notifications
-Enabled Local Notifications with Unity Mobile Notifications for scheduled events.
-Push notifications with Firebase for various instant actions. 
-Also made an internal notifications interface for when the player is currently in game and with the screen focused.
-
--Ads and other plugins
-Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.
-
--Village mode
-A village mode, where players can collect and upgrade buildings that provide different boosts for their account. 
-
--Multiples characters
-Developed a multi-character system, enabling players to create, switch, and manage multiple characters.
-Since the game was designed for one character per user, I had to make plenty of changes and make sure those changes did not affect the production game/server.
-
-
+-->
+				<!-- General -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
 							<ul>
-								<h3>List</h3>
-								<li>
-
-								</li>
-						
+								<h3>General</h3>
+								<li>Ensure any feature or update can be added without disrupting the previous versions. Allowing the coexistence of multiples versions from the same store or different stores.</li>
+								<li>Implemented different A/B testing processes, where the game showed different features or with some variations to test which one performed better.</li>		
 							</ul>
 						</div>                                         
 					</div>
 				</div>
 
+				<!-- Multiples characters -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Multiple Characters</h3>
+								<li>Developed a multi-character system, enabling players to create, switch, and manage multiple characters.</li>
+								<li>Since the game was designed for one character per user, I had to make plenty of changes and make sure those changes did not affect the production game/server.</li>		
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Ads -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Ads and other plugins</h3>
+								<li>Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.</li>	
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+					
+				<!-- Addressables -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Addressables</h3>
+								<li>Implemented asynchronous asset loading using Unity Addressables System and a custom Google Play Addressables Plugin, overcoming build size restrictions and enhancing performance.</li>
+								<li>Previously used Amazon Web Services for storing the assets.</li>	
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Back System -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Back System</h3>
+								<li>A 'back' system that allows the user to close pop ups, return to the previous screen, pause the game, etc.</li>				
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Builds -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Builds</h3>
+								<li>I was in charge of making the builds for all the different stores, ensuring the compliance.</li>	
+								<li>Also integrated payment platform Xsolla, to facilitate transactions across different regions and app stores.</li>	
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Notifications -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Local/Push Notifications</h3>
+								<li>Enabled Local Notifications with Unity Mobile Notifications for scheduled events.</li>	
+								<li>Push notifications with Firebase for various instant actions.</li>	
+								<li>Also made an internal notifications interface for when the player is currently in game and with the screen focused.</li>	
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Referral System -->
 				<div class="row grid">
 					<div class="single-portfolio col-sm-4 all">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="images/test.jpg" alt="">
+								<img class="image img-fluid" src="images/FightLegends/referral.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="single-portfolio col-sm-8 all">
 						<div class="d-block">
 							<ul>
-								<li>Main programmer - Unity/Laravel</li>
-								<li>Implement game mechanics, events, features and UI</li>
-								<li>Validate IAPs and ensure integrity to block cheats in game</li>
+								<h3>Referral System</h3>
+								<li>
+									Allows players to invite others and earn rewards.
+								</li>				
 							</ul>
 						</div>                                         
 					</div>
 				</div>
+
+				<!-- Events -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/FightLegends/guardian_tower.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Events</h3>
+								<li>Created the first event in the game. It has a system where players can enter undefeated enemy rooms and continue where other players left.</li>
+								<li>Since multiple players can try to enter the room, I had to make sure to only let the first request in, avoiding any race condition.</li>
+								<li>Additionally, it contains a complete new enemy model and a special shop where players can flip cards to get random rewards.</li>							
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- IAP -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/FightLegends/subscription.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>IAPs, subscription and bundles</h3>
+								<li>For each store, I had to validate the receipts received in the server after a player buys any IAP.</li>
+								<li>Also, schedule calls to update subscription data and process refunded, canceled or not given IAPs.</li>					
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Tournaments -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/FightLegends/tournament.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Tournaments and rankings</h3>
+								<li>Made a ranking system where players would obtain point from playing a specific game mode. It rewarded special icons for the chat.</li>
+								<li>Players can see the rankings changing in real time, current and last weeks positions and a global ranking.</li>					
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Tutorial -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/FightLegends/tutorial_announcer.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Tutorial</h3>
+								<li>Designed and implemented a comprehensive tutorial system, guiding players through core game mechanics, combat actions and main interface screens.</li>		
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
+				<!-- Chat -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/FightLegends/chat.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Chat system (mods, block, ban etc)</h3>
+								<li>Created a chat system where players can either comunicate in global channels or send private messages.</li>		
+								<li>Players can also block/unblock others and if enabled to be a moderator, they have the ability to ban other players.</li>		
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+				
+				<!-- Village -->
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/FightLegends/village.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-8 all">
+						<div class="d-block">
+							<ul>
+								<h3>Village Mode</h3>
+								<li>A village mode, where players can collect and upgrade buildings that provide different boosts for their account.</li>		
+							</ul>
+						</div>                                         
+					</div>
+				</div>
+
 			</div>
 	</section>
 
