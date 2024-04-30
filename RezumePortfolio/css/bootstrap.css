@@ -372,6 +372,15 @@ mark,
   padding: 0.2em;
   background-color: #fcf8e3; }
 
+.custom-list {
+    padding-left: 0; /* Remove default left padding */
+    text-align: center; /* Align text to the left */
+}
+.custom-list li {
+    list-style-type: none; /* Remove default bullet points */
+    margin-left: 0; /* Remove default left margin */
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
