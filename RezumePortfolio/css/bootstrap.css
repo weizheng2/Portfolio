@@ -356,6 +356,10 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2; }
 
+.aligned-list-left li {
+  text-align: left;
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;

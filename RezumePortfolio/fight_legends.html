@@ -91,7 +91,7 @@
 				<div class="single-portfolio col-sm-12">
 					<div class="d-block">
 						<ul>
-							<h3 >General</h3>
+							<h3>General</h3>
 							<li>Implement UI screens structure and functionality based on the artist designs, taking into account different resolutions.</li>	
 							<li>Ensure any feature or update can be added without disrupting the previous versions. Allowing the coexistence of multiples versions from the same store or different stores.</li>
 							<li>Implemented different A/B testing processes, where the game showed different features or with some variations to test which one performed better.</li>		
@@ -224,14 +224,16 @@
 					<div class="d-block">
 						<ul>
 							<h3>IAPs, subscription and bundles</h3>
-							<li>For each store, I had to validate the receipts received in the server after a player buys any IAP.</li>
-							<li>Also, schedule calls to update subscription data and process refunded, canceled or not given IAPs.</li>					
+							<li>For each store, I implemented validations for the receipts received in the server after a player buys any IAP.</li>
+							<li>Also, schedule cron jobs or tasks to update subscription data and process refunded, canceled or not given IAPs.</li>
+							<li>For the bundles, I also had to create conditions for showing and purchasing them, since they appear individually for each player and are not always available.</li>		
 						</ul>
 					</div>                                         
 				</div>
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/subscription.png" alt="">
+						<img class="image img-fluid" src="images/FightLegends/subscription.png" alt=""> 
+						<img class="image img-fluid" src="images/FightLegends/bundles.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -242,8 +244,10 @@
 					<div class="d-block">
 						<ul>
 							<h3>Tournaments and rankings</h3>
-							<li>Made a ranking system where players would obtain point from playing a specific game mode. It rewarded special icons for the chat.</li>
-							<li>Players can see the rankings changing in real time, current and last weeks positions and a global ranking.</li>					
+							<li>Made a ranking system where players obtain points from playing a specific game mode. It rewards special icons for the chat.</li>
+							<li>Players can see the rankings changing in real time, current and last weeks positions and a global ranking.</li>	
+							<li>In the server, each time the top ranking changes, it sends a push notification to the affected player.</li>
+							<li>Each week, a cron job is scheduled to process, qualify and reward rankings.</li>				
 						</ul>
 					</div>                                         
 				</div>
@@ -260,13 +264,16 @@
 					<div class="d-block">
 						<ul>
 							<h3>Tutorial</h3>
-							<li>Designed and implemented a comprehensive tutorial system, guiding players through core game mechanics, combat actions and main interface screens.</li>		
+							<li>Implemented a comprehensive tutorial system, leading players through core game mechanics, combat actions and main interface screens.</li>
+							<li>In the combat part, I made a step by step guide where the combat only advances if the player performs the required action.</li>
+							<li>For the other parts, the system blocks everything except the buttons or actions we want. The player is shown where to focus with an announcer and with direction arrows.</li>
 						</ul>
 					</div>                                         
 				</div>
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
 						<img class="image img-fluid" src="images/FightLegends/tutorial_announcer.png" alt="">
+						<img class="image img-fluid" src="images/FightLegends/tutorial_combat.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -278,6 +285,7 @@
 						<ul>
 							<h3>Chat system (mods, block, ban etc)</h3>
 							<li>Created a chat system where players can either comunicate in global channels or send private messages.</li>		
+							<li>Global channels are managed in a server panel, allowing making it easier to create and delete channels.</li>		
 							<li>Players can also block/unblock others and if enabled to be a moderator, they have the ability to ban other players.</li>		
 						</ul>
 					</div>                                         
@@ -295,7 +303,8 @@
 					<div class="d-block">
 						<ul>
 							<h3>Village Mode</h3>
-							<li>A village mode, where players can collect and upgrade buildings that provide different boosts for their account.</li>		
+							<li>A village mode, where players can collect and upgrade buildings that provide different boosts.</li>	
+		
 						</ul>
 					</div>                                         
 				</div>

@@ -347,7 +347,10 @@ a {
       font-size: 20px; }
     .single-portfolio .p-inner .cat {
       font-size: 14px;
-      /* text-transform: uppercase; */
+      color: #cccccc; }
+    .single-portfolio .p-inner .cat-margin {
+      margin-bottom: 9px;
+      font-size: 14px;
       color: #cccccc; }
 
 /*--------- Start Portfolio Area -------------*/
