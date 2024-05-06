@@ -92,21 +92,23 @@
 					<div class="d-block">
 						<ul>
 							<h3>General</h3>
+							<li>Im in charge of making builds and submitting the game for all the different stores, ensuring compliance with their requirements.</li>	
 							<li>Implement UI screens structure and functionality based on the artist designs, taking into account different resolutions.</li>	
+							<li>Structure different A/B testing processes, where the game shows different features with some variations to test which one performs better.</li>		
 							<li>Ensure any feature or update can be added without disrupting the previous versions. Allowing the coexistence of multiples versions from the same store or different stores.</li>
-							<li>Implemented different A/B testing processes, where the game showed different features or with some variations to test which one performed better.</li>		
 						</ul>
 					</div>                                         
 				</div>
 			</div>
 
-			<!-- Ads -->
+			<!-- SDKs and Plugins -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-12">
 					<div class="d-block">
 						<ul>
-							<h3>Ads and other plugins</h3>
+							<h3>SDKs and Plugins</h3>
 							<li>Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.</li>	
+							<li>Added analytics SDKs like GameAnalytics and Firebase for showing data events required by the team.</li>
 						</ul>
 					</div>                                         
 				</div>
@@ -118,7 +120,7 @@
 					<div class="d-block">
 						<ul>
 							<h3>Addressables</h3>
-							<li>Implemented asynchronous asset loading using Unity Addressables System and a custom Google Play Addressables Plugin, overcoming build size restrictions and enhancing performance.</li>
+							<li>Implemented asynchronous asset loading using Unity Addressables System and a Google Play Addressables Plugin, overcoming Google Plays build size restrictions and enhancing performance by only loading assets when needed.</li>
 							<li>Previously used Amazon Web Services for storing the assets.</li>	
 						</ul>
 					</div>                                         
@@ -131,20 +133,8 @@
 					<div class="d-block">
 						<ul>
 							<h3>Back System</h3>
-							<li>A 'back' system that allows the user to close pop ups, return to the previous screen, pause the game, etc.</li>				
-						</ul>
-					</div>                                         
-				</div>
-			</div>
-
-			<!-- Builds -->
-			<div class="row grid">
-				<div class="single-portfolio col-sm-12">
-					<div class="d-block">
-						<ul>
-							<h3>Builds</h3>
-							<li>I was in charge of making the builds for all the different stores, ensuring the compliance.</li>	
-							<li>Also integrated payment platform Xsolla, to facilitate transactions across different regions and app stores.</li>	
+							<li>The system allows the user to close pop ups, return to the previous screen, pause the game, etc.</li>	
+							<li>The structure uses event bus and each screen can implement a different close event if needed.</li>					
 						</ul>
 					</div>                                         
 				</div>
@@ -156,8 +146,8 @@
 					<div class="d-block">
 						<ul>
 							<h3>Local/Push Notifications</h3>
-							<li>Enabled Local Notifications with Unity Mobile Notifications for scheduled events.</li>	
-							<li>Push notifications with Firebase for various instant actions.</li>	
+							<li>Local Notifications with Unity Mobile Notifications for scheduled events, for instace, when the in-game store refreshes.</li>	
+							<li>Push notifications with Firebase for instant actions processed in the server. One example of this is when a players receives a new chat message.</li>	
 							<li>Also made an internal notifications interface for when the player is currently in game and with the screen focused.</li>	
 						</ul>
 					</div>                                         
@@ -171,7 +161,7 @@
 						<ul>
 							<h3>Multiple Characters</h3>
 							<li>Developed a multi-character system, enabling players to create, switch, and manage multiple characters.</li>
-							<li>Since the game was designed for one character per user, I had to make plenty of changes and make sure those changes did not affect the production game/server.</li>		
+							<li>Since the game was designed for one character per user, the biggest challenge was to ensure the changes to the server and database did not affect the production game.</li>
 						</ul>
 					</div>                                         
 				</div>
@@ -188,7 +178,8 @@
 					<div class="d-block">
 						<ul>
 							<h3>Referral System</h3>
-							<li>Allows players to invite others and earn rewards.</li>				
+							<li>Allows players to invite others and earn rewards.</li>	
+			
 						</ul>
 					</div>                                         
 				</div>
@@ -207,7 +198,7 @@
 							<h3>Events</h3>
 							<li>Created the first event in the game. It has a system where players can enter undefeated enemy rooms and continue where other players left.</li>
 							<li>Since multiple players can try to enter the room, I had to make sure to only let the first request in, avoiding any race condition.</li>
-							<li>Additionally, it contains a complete new enemy model and a special shop where players can flip cards to get random rewards.</li>							
+							<li>Additionally, it contains a complete new enemy model and a special shop where players can flip cards to get random rewards.</li>						
 						</ul>
 					</div>                                         
 				</div>	
@@ -225,8 +216,9 @@
 						<ul>
 							<h3>IAPs, subscription and bundles</h3>
 							<li>For each store, I implemented validations for the receipts received in the server after a player buys any IAP.</li>
-							<li>Also, schedule cron jobs or tasks to update subscription data and process refunded, canceled or not given IAPs.</li>
-							<li>For the bundles, I also had to create conditions for showing and purchasing them, since they appear individually for each player and are not always available.</li>		
+							<li>Schedule cron jobs or tasks to update subscriptions data and process refunded, canceled or not given IAPs.</li>
+							<li>For the bundles, I also had to create conditions for showing and purchasing them, since they appear individually for each player and are not always available.</li>
+							<li>Also integrated the payment platform Xsolla, to facilitate transactions across different regions and stores.</li>			
 						</ul>
 					</div>                                         
 				</div>
