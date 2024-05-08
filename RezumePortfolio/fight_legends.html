@@ -171,24 +171,6 @@
 					</div>
 				</div>
 			</div>
-	
-			<!-- Referral System -->
-			<div class="row grid">	
-				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
-						<ul>
-							<h3>Referral System</h3>
-							<li>Allows players to invite others and earn rewards.</li>	
-			
-						</ul>
-					</div>                                         
-				</div>
-				<div class="single-portfolio col-sm-5">
-					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/referral.png" alt="">
-					</div>
-				</div>
-			</div>
 
 			<!-- Events -->
 			<div class="row grid">			
@@ -218,7 +200,6 @@
 							<li>For each store, I implemented validations for the receipts received in the server after a player buys any IAP.</li>
 							<li>Schedule cron jobs or tasks to update subscriptions data and process refunded, canceled or not given IAPs.</li>
 							<li>For the bundles, I also had to create conditions for showing and purchasing them, since they appear individually for each player and are not always available.</li>
-							<li>Also integrated the payment platform Xsolla, to facilitate transactions across different regions and stores.</li>			
 						</ul>
 					</div>                                         
 				</div>
@@ -289,32 +270,52 @@
 				</div>
 			</div>
 			
+			<!-- Shop -->
+			<div class="row grid">	
+				<div class="single-portfolio col-sm-7">
+					<div class="d-block">
+						<ul>
+							<h3>Game Shop</h3>
+							<li>Implement different shop sections where the player can buy different types of resources.</li>
+							<li>Items section, each player has its own catalog of items.</li>
+							<li>Chests section, players can get content with random possibilities.</li>
+						</ul>
+					</div>                                         
+				</div>
+				<div class="single-portfolio col-sm-5">
+					<div class="relative">
+						<img class="image img-fluid" src="images/FightLegends/shop_items.jpg" alt="">
+						<img class="image img-fluid" src="images/FightLegends/shop_chests.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- Referral System -->
+			<div class="row grid">	
+				<div class="single-portfolio col-sm-7">
+					<div class="d-block">
+						<ul>
+							<h3>Referral System</h3>
+							<li>Allows players to invite others and earn rewards.</li>	
+							<li>Each code is generated with 'Hashids', to generate a unique, reversible, and short hash from the user ID.</li>
+						</ul>
+					</div>                                         
+				</div>
+				<div class="single-portfolio col-sm-5">
+					<div class="relative">
+						<img class="image img-fluid" src="images/FightLegends/referral.png" alt="">
+					</div>
+				</div>
+			</div>
+						
 			<!-- Village -->
 			<div class="row grid">	
 				<div class="single-portfolio col-sm-7">
 					<div class="d-block">
 						<ul>
 							<h3>Village Mode</h3>
-							<li>A village game mode, where players can collect and upgrade buildings that provide different boosts.</li>
-							<li></li>
-						</ul>
-					</div>                                         
-				</div>
-				<div class="single-portfolio col-sm-5">
-					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/village.png" alt="">
-					</div>
-				</div>
-			</div>
-
-			<!-- Chests -->
-			<div class="row grid">	
-				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
-						<ul>
-							<h3>Chests</h3>
-							<li>Member chest</li>
-							<li>Chest purchase random, and screen</li>
+							<li>A village game mode, where players can interact and upgrade buildings that provide different boosts.</li>
+							<li>Focused on decoupling the structure to facilitate the management of each building type.</li>
 						</ul>
 					</div>                                         
 				</div>
