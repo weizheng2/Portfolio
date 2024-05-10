@@ -101,7 +101,7 @@
 					<div class="lang-es d-none">
 						<ul>
 							<h3>General</h3>
-							<li>Estoy a cargo de hacer y enviar builds a todas las diferentes tiendas, asegurando el cumplimiento de sus requisitos.</li>	
+							<li>Encargarme de compilar y enviar builds a todas las diferentes tiendas, asegurando el cumplimiento de sus requisitos.</li>	
 							<li>Implementar la estructura y funcionalidad de las pantallas de interfaz de usuario basándome en los diseños del artista, teniendo en cuenta múltiples resoluciones.</li>	
 							<li>Estructurar múltiples procesos de prueba A/B, donde el juego muestra diferentes funcionalidades con algunas variaciones para probar cuál funciona mejor.</li>		
 							<li>Asegurar que cualquier funcionalidad o actualización pueda ser añadida sin interrumpir las versiones anteriores. Permitiendo la coexistencia de múltiples versiones de la misma tienda o de diferentes tiendas.</li>
@@ -117,14 +117,14 @@
 						<ul>
 							<h3>SDKs and Plugins</h3>
 							<li>Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.</li>	
-							<li>Added analytics SDKs like GameAnalytics and Firebase for showing data events required by the team.</li>
+							<li>Added analytics SDKs like GameAnalytics and Firebase for receiving events required by the team.</li>
 						</ul>
 					</div>    
 					<div class="lang-es d-none">
 						<ul>
 							<h3>SDKs y Plugins</h3>
-							<li>Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.</li>	
-							<li>Added analytics SDKs like GameAnalytics and Firebase for showing data events required by the team.</li>
+							<li>Añadir plugins de publicidad para mostrar videos recompensados e intersticiales. La probabilidad de mostrarlos está controlada a través del servidor.</li>	
+							<li>Añadir SDKs de análisis como GameAnalytics y Firebase para recibir eventos requeridos por el equipo.</li>
 						</ul>
 					</div>                                         
 				</div>
@@ -133,53 +133,80 @@
 			<!-- Addressables -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-12">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Addressables</h3>
 							<li>Implemented asynchronous asset loading using Unity Addressables System and a Google Play Addressables Plugin, overcoming Google Plays build size restrictions and enhancing performance by only loading assets when needed.</li>
 							<li>Previously used Amazon Web Services for storing the assets.</li>	
 						</ul>
-					</div>                                         
+					</div>      
+					<div class="lang-es d-none">
+						<ul>
+							<h3>Addressables</h3>
+							<li>Implementar la carga asíncrona de assets utilizando el Sistema de Addressables de Unity y un Plugin de Addressables de Google Play, superando las restricciones de tamaño de compilación de Google Play y mejorando el rendimiento al cargar assets solo cuando sea necesario.</li>
+							<li>Anteriormente se utilizaba Amazon Web Services para almacenar los assets.</li>
+						</ul>
+					</div>                                       
 				</div>
 			</div>
 
 			<!-- Back System -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-12">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Back System</h3>
-							<li>The system allows the user to close pop ups, return to the previous screen, pause the game, etc.</li>	
+							<li>The system allows the user to close pop ups, return to the previous screen, pause the game, etc., with a back button in-game or from the device.</li>	
 							<li>The structure uses event bus and each screen can implement a different close event if needed.</li>					
 						</ul>
-					</div>                                         
+					</div>          
+					<div class="lang-es d-none">
+						<ul>
+							<h3>Sistema de Back/Retroceso</h3>
+							<li>El sistema permite al usuario cerrar ventanas emergentes, regresar a la pantalla anterior, pausar el juego, etc., con un botón de retroceso dentro del juego o desde el dispositivo.</li>
+							<li>La estructura utiliza event bus y cada pantalla puede implementar un evento de cierre diferente si es necesario.</li>			
+						</ul>
+					</div>                                  
 				</div>
 			</div>
 
 			<!-- Notifications -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-12">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Local/Push Notifications</h3>
 							<li>Local Notifications with Unity Mobile Notifications for scheduled events, for instace, when the in-game store refreshes.</li>	
 							<li>Push notifications with Firebase for instant actions processed in the server. One example of this is when a players receives a new chat message.</li>	
-							<li>Also made an internal notifications interface for when the player is currently in game and with the screen focused.</li>	
+							<li>Also added an internal notifications interface for when the player is currently in game and with the screen focused.</li>	
 						</ul>
-					</div>                                         
+					</div>   
+					<div class="lang-es d-none">
+						<h3>Notificaciones Locales/Push</h3>
+						<li>Notificaciones Locales con Unity Mobile Notifications para eventos programados, por ejemplo, cuando la tienda dentro del juego se actualiza.</li>	
+						<li>Notificaciones Push con Firebase para acciones instantáneas procesadas en el servidor. Un ejemplo de esto es cuando un jugador recibe un nuevo mensaje de chat.</li>	
+						<li>También añadí una interfaz de notificaciones internas para cuando el jugador está dentro del juego y con la pantalla enfocada.</li>
+					</div>                                        
 				</div>
 			</div>
 
 			<!-- Multiples characters -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Multiple Characters</h3>
 							<li>Developed a multi-character system, enabling players to create, switch, and manage multiple characters.</li>
 							<li>Since the game was designed for one character per user, the biggest challenge was to ensure the changes to the server and database did not affect the production game.</li>
 						</ul>
-					</div>                                         
+					</div>  
+					<div class="lang-es d-none">
+						<ul>
+							<h3>Múltiples Personajes</h3>
+							<li>Desarrollé un sistema de múltiples personajes, permitiendo a los jugadores crear, cambiar y gestionar varios personajes.</li>
+							<li>Dado que el juego estaba diseñado para un solo personaje por usuario, el mayor desafío fue garantizar que los cambios en el servidor y la base de datos no afectaran al juego en producción.</li>
+						</ul>
+					</div>                                           
 				</div>
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
