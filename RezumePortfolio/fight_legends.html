@@ -182,10 +182,12 @@
 						</ul>
 					</div>   
 					<div class="lang-es d-none">
-						<h3>Notificaciones Locales/Push</h3>
-						<li>Notificaciones Locales con Unity Mobile Notifications para eventos programados, por ejemplo, cuando la tienda dentro del juego se actualiza.</li>	
-						<li>Notificaciones Push con Firebase para acciones instantáneas procesadas en el servidor. Un ejemplo de esto es cuando un jugador recibe un nuevo mensaje de chat.</li>	
-						<li>También añadí una interfaz de notificaciones internas para cuando el jugador está dentro del juego y con la pantalla enfocada.</li>
+						<ul>
+							<h3>Notificaciones Locales/Push</h3>
+							<li>Notificaciones Locales con Unity Mobile Notifications para eventos programados, por ejemplo, cuando la tienda dentro del juego se actualiza.</li>	
+							<li>Notificaciones Push con Firebase para acciones instantáneas procesadas en el servidor. Un ejemplo de esto es cuando un jugador recibe un nuevo mensaje de chat.</li>	
+							<li>También añadí una interfaz de notificaciones internas para cuando el jugador está dentro del juego y con la pantalla enfocada.</li>
+						</ul>
 					</div>                                        
 				</div>
 			</div>
@@ -203,7 +205,7 @@
 					<div class="lang-es d-none">
 						<ul>
 							<h3>Múltiples Personajes</h3>
-							<li>Desarrollé un sistema de múltiples personajes, permitiendo a los jugadores crear, cambiar y gestionar varios personajes.</li>
+							<li>Desarrollar un sistema de múltiples personajes, permitiendo a los jugadores crear, cambiar y gestionar varios personajes.</li>
 							<li>Dado que el juego estaba diseñado para un solo personaje por usuario, el mayor desafío fue garantizar que los cambios en el servidor y la base de datos no afectaran al juego en producción.</li>
 						</ul>
 					</div>                                           
@@ -218,14 +220,22 @@
 			<!-- Events -->
 			<div class="row grid">			
 				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Game Event</h3>
 							<li>Created the first event in the game. It has a system where players can enter undefeated enemy rooms and continue where other players left.</li>
-							<li>Since multiple players can try to enter the room, I had to make sure to only let the first request in, avoiding any race condition.</li>
+							<li>Since multiple players can try to enter the same room, made sure to only let the first request in, avoiding any race condition.</li>
 							<li>Additionally, it contains a special shop where players can flip cards to get random rewards.</li>						
 						</ul>
-					</div>                                         
+					</div>     
+					<div class="lang-es d-none">
+						<ul>
+							<h3>Evento del Juego</h3>
+							<li>Crear el primer evento en el juego. Tiene un sistema donde los jugadores pueden entrar en salas de enemigos no derrotados y continuar desde donde otros jugadores lo dejaron.</li>
+							<li>Dado que varios jugadores pueden intentar entrar a la misma sala, había de asegurarse de permitir solo la primera solicitud, evitando cualquier condición de carrera.</li>
+							<li>Además, contiene una tienda especial donde los jugadores pueden girar cartas para obtener recompensas aleatorias.</li>						
+						</ul>
+					</div>                                      
 				</div>	
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
