@@ -23,9 +23,10 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+			<div class="collapse navbar-collapse justify-content-md-center">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item lang-en"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item lang-es"><a class="nav-link" href="index.html">Inicio</a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,7 +47,7 @@
 							<li><b>Studio: </b>Dark Curry (Spain)</li>
 							<li><b>Time: </b>November 2021 - Present</li>
 						</ul>		
-						<ul class="list-unstyled lang-es d-none">
+						<ul class="list-unstyled lang-es">
 							<li><b>Tipo: </b>Trabajo profesional</li>
 							<li><b>Links: </b><a href="https://play.google.com/store/apps/details?id=com.darkcurry.darksteel" target="_blank">Google Play</a>, 
 								<a href="https://apps.apple.com/us/app/fight-legends-mortal-fighting/id1529416496" target="_blank">App Store</a></li>
@@ -58,7 +59,7 @@
 						<p class="lang-en">Fight Legends, also known as Dark Steel, is a mobile medieval RPG fighting game.<br />
 							Is the project I was assigned to after finishing my internship with the Studio and becoming a full time programmer.<br />
 							Below are some of my main contributions:</p>
-						<p class="lang-es d-none">Fight Legends, también conocido como Dark Steel, es un juego de lucha RPG medieval para móvil.<br />
+						<p class="lang-es">Fight Legends, también conocido como Dark Steel, es un juego de lucha RPG medieval para móvil.<br />
 							Es el proyecto al que fui asignado después de terminar mis prácticas en el estudio y convertirme en programador a tiempo completo.<br />
 							Debajo se muestran algunas de mis principales contribuciones:</p>
 					</div>
@@ -98,7 +99,7 @@
 							<li>Ensure any feature or update can be added without disrupting the previous versions. Allowing the coexistence of multiples versions from the same store or different stores.</li>
 						</ul>
 					</div>        
-					<div class="lang-es d-none">
+					<div class="lang-es">
 						<ul>
 							<h3>General</h3>
 							<li>Encargarme de compilar y enviar builds a todas las diferentes tiendas, asegurando el cumplimiento de sus requisitos.</li>	
@@ -110,21 +111,21 @@
 				</div>
 			</div>
 
-			<!-- SDKs and Plugins -->
+			<!-- SDK and Plugins -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-12">
 					<div class="lang-en">
 						<ul>
-							<h3>SDKs and Plugins</h3>
+							<h3>SDK and Plugins</h3>
 							<li>Added advertisement plugins to show rewarded videos and interstitials. The probability to show is controlled via server.</li>	
-							<li>Added analytics SDKs like GameAnalytics and Firebase for receiving events required by the team.</li>
+							<li>Added analytics SDK like GameAnalytics and Firebase for receiving events required by the team.</li>
 						</ul>
 					</div>    
-					<div class="lang-es d-none">
+					<div class="lang-es">
 						<ul>
-							<h3>SDKs y Plugins</h3>
+							<h3>SDK y Plugins</h3>
 							<li>Añadir plugins de publicidad para mostrar videos recompensados e intersticiales. La probabilidad de mostrarlos está controlada a través del servidor.</li>	
-							<li>Añadir SDKs de análisis como GameAnalytics y Firebase para recibir eventos requeridos por el equipo.</li>
+							<li>Añadir SDK de análisis como GameAnalytics y Firebase para recibir eventos requeridos por el equipo.</li>
 						</ul>
 					</div>                                         
 				</div>
@@ -140,33 +141,13 @@
 							<li>Previously used Amazon Web Services for storing the assets.</li>	
 						</ul>
 					</div>      
-					<div class="lang-es d-none">
+					<div class="lang-es">
 						<ul>
 							<h3>Addressables</h3>
 							<li>Implementar la carga asíncrona de assets utilizando el Sistema de Addressables de Unity y un Plugin de Addressables de Google Play, superando las restricciones de tamaño de compilación de Google Play y mejorando el rendimiento al cargar assets solo cuando sea necesario.</li>
 							<li>Anteriormente se utilizaba Amazon Web Services para almacenar los assets.</li>
 						</ul>
 					</div>                                       
-				</div>
-			</div>
-
-			<!-- Back System -->
-			<div class="row grid">
-				<div class="single-portfolio col-sm-12">
-					<div class="lang-en">
-						<ul>
-							<h3>Back System</h3>
-							<li>The system allows the user to close pop ups, return to the previous screen, pause the game, etc., with a back button in-game or from the device.</li>	
-							<li>The structure uses event bus and each screen can implement a different close event if needed.</li>					
-						</ul>
-					</div>          
-					<div class="lang-es d-none">
-						<ul>
-							<h3>Sistema de Back/Retroceso</h3>
-							<li>El sistema permite al usuario cerrar ventanas emergentes, regresar a la pantalla anterior, pausar el juego, etc., con un botón de retroceso dentro del juego o desde el dispositivo.</li>
-							<li>La estructura utiliza event bus y cada pantalla puede implementar un evento de cierre diferente si es necesario.</li>			
-						</ul>
-					</div>                                  
 				</div>
 			</div>
 
@@ -181,7 +162,7 @@
 							<li>Also added an internal notifications interface for when the player is currently in game and with the screen focused.</li>	
 						</ul>
 					</div>   
-					<div class="lang-es d-none">
+					<div class="lang-es">
 						<ul>
 							<h3>Notificaciones Locales/Push</h3>
 							<li>Notificaciones Locales con Unity Mobile Notifications para eventos programados, por ejemplo, cuando la tienda dentro del juego se actualiza.</li>	
@@ -191,28 +172,79 @@
 					</div>                                        
 				</div>
 			</div>
+			
+			<!-- Back System -->
+			<div class="row grid">
+				<div class="single-portfolio col-sm-12">
+					<div class="lang-en">
+						<ul>
+							<h3>Back System</h3>
+							<li>The system allows the user to close pop ups, return to the previous screen, pause the game, etc., with a back button in-game or from the device.</li>	
+							<li>The structure uses event bus and each screen can implement a different close event if needed.</li>					
+						</ul>
+					</div>          
+					<div class="lang-es">
+						<ul>
+							<h3>Sistema de Back/Retroceso</h3>
+							<li>El sistema permite al usuario cerrar ventanas emergentes, regresar a la pantalla anterior, pausar el juego, etc., con un botón de retroceso dentro del juego o desde el dispositivo.</li>
+							<li>La estructura utiliza event bus y cada pantalla puede implementar un evento de cierre diferente si es necesario.</li>			
+						</ul>
+					</div>                                  
+				</div>
+			</div>
 
-			<!-- Multiples characters -->
+			<!-- IAP -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-7">
 					<div class="lang-en">
 						<ul>
-							<h3>Multiple Characters</h3>
-							<li>Developed a multi-character system, enabling players to create, switch, and manage multiple characters.</li>
-							<li>Since the game was designed for one character per user, the biggest challenge was to ensure the changes to the server and database did not affect the production game.</li>
+							<h3>IAPs, subscription and bundles</h3>
+							<li>For each store, I implemented validations for the receipts received in the server after a player buys any IAP.</li>
+							<li>Schedule cron jobs or tasks to update subscriptions data and process refunded, canceled or not given IAPs.</li>
+							<li>For the bundles, I also had to create conditions for showing and purchasing them, since they appear individually for each player and are not always available.</li>
 						</ul>
-					</div>  
-					<div class="lang-es d-none">
+					</div>            
+					<div class="lang-es">
 						<ul>
-							<h3>Múltiples Personajes</h3>
-							<li>Desarrollar un sistema de múltiples personajes, permitiendo a los jugadores crear, cambiar y gestionar varios personajes.</li>
-							<li>Dado que el juego estaba diseñado para un solo personaje por usuario, el mayor desafío fue garantizar que los cambios en el servidor y la base de datos no afectaran al juego en producción.</li>
+							<h3>Compras integradas (IAP), suscripciones y bundles</h3>
+							<li>Para cada tienda, implementar validaciones para los recibos obtenidos en el servidor después de que un jugador compre cualquier compra integrada (IAP).</li>
+							<li>Programar cron jobs o tareas para actualizar los datos de las suscripciones y procesar las compras devueltas, canceladas o no entregadas de las IAP.</li>
+							<li>Para los bundles, también tuve que crear condiciones para mostrarlos y comprarlos, ya que aparecen individualmente para cada jugador y no siempre están disponibles.</li>
 						</ul>
-					</div>                                           
+					</div>                               
 				</div>
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/multi_character.png" alt="">
+						<img class="image img-fluid" src="images/FightLegends/subscription.png" alt=""> 
+						<img class="image img-fluid" src="images/FightLegends/bundles.png" alt="">
+					</div>
+				</div>
+			</div>
+		
+			<!-- Tutorial -->
+			<div class="row grid">		
+				<div class="single-portfolio col-sm-7">
+					<div class="lang-en">
+						<ul>
+							<h3>Tutorial</h3>
+							<li>Implemented a comprehensive tutorial system, leading players through core game mechanics, combat actions and main interface screens.</li>
+							<li>In the combat part, I made a step by step guide where the combat only advances if the player performs the required action.</li>
+							<li>For the other parts, the system blocks everything except the buttons or actions we want. The player is shown where to focus with an announcer and with direction arrows.</li>
+						</ul>
+					</div>        
+					<div class="lang-es">
+						<ul>
+							<h3>Tutorial</h3>
+							<li>Implementar un sistema de tutorial completo, guiando a los jugadores a través de las mecánicas principales del juego, acciones de combate y pantallas de interfaz principales.</li>
+							<li>En la parte de combate, creé una guía paso a paso donde el combate solo avanza si el jugador realiza la acción requerida.</li>
+							<li>Para las otras partes, el sistema bloquea todo excepto los botones o acciones que se desea. Se muestra al jugador dónde enfocarse con un anunciador y flechas de dirección.</li>
+						</ul>
+					</div>                                    
+				</div>
+				<div class="single-portfolio col-sm-5">
+					<div class="relative">
+						<img class="image img-fluid" src="images/FightLegends/tutorial_announcer.png" alt="">
+						<img class="image img-fluid" src="images/FightLegends/tutorial_combat.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -228,7 +260,7 @@
 							<li>Additionally, it contains a special shop where players can flip cards to get random rewards.</li>						
 						</ul>
 					</div>     
-					<div class="lang-es d-none">
+					<div class="lang-es">
 						<ul>
 							<h3>Evento del Juego</h3>
 							<li>Crear el primer evento en el juego. Tiene un sistema donde los jugadores pueden entrar en salas de enemigos no derrotados y continuar desde donde otros jugadores lo dejaron.</li>
@@ -240,66 +272,7 @@
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
 						<img class="image img-fluid" src="images/FightLegends/guardian_tower.png" alt="">
-					</div>
-				</div>
-			</div>
-
-			<!-- IAP -->
-			<div class="row grid">
-				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
-						<ul>
-							<h3>IAPs, subscription and bundles</h3>
-							<li>For each store, I implemented validations for the receipts received in the server after a player buys any IAP.</li>
-							<li>Schedule cron jobs or tasks to update subscriptions data and process refunded, canceled or not given IAPs.</li>
-							<li>For the bundles, I also had to create conditions for showing and purchasing them, since they appear individually for each player and are not always available.</li>
-						</ul>
-					</div>                                         
-				</div>
-				<div class="single-portfolio col-sm-5">
-					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/subscription.png" alt=""> 
-						<img class="image img-fluid" src="images/FightLegends/bundles.png" alt="">
-					</div>
-				</div>
-			</div>
-
-			<!-- Tournaments -->
-			<div class="row grid">
-				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
-						<ul>
-							<h3>Tournaments and rankings</h3>
-							<li>Made a ranking system where players obtain points from playing a specific game mode. It rewards special icons for the chat.</li>
-							<li>Players can see the current week ranking updating in real time. And also check last weeks positions and the global all time ranking.</li>	
-							<li>In the server, each time the top ranking changes, it sends a push notification to the affected player.</li>
-							<li>Each week, a cron job is scheduled to process, qualify and reward rankings.</li>				
-						</ul>
-					</div>                                         
-				</div>
-				<div class="single-portfolio col-sm-5">
-					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/tournament.png" alt="">
-					</div>
-				</div>
-			</div>
-
-			<!-- Tutorial -->
-			<div class="row grid">		
-				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
-						<ul>
-							<h3>Tutorial</h3>
-							<li>Implemented a comprehensive tutorial system, leading players through core game mechanics, combat actions and main interface screens.</li>
-							<li>In the combat part, I made a step by step guide where the combat only advances if the player performs the required action.</li>
-							<li>For the other parts, the system blocks everything except the buttons or actions we want. The player is shown where to focus with an announcer and with direction arrows.</li>
-						</ul>
-					</div>                                         
-				</div>
-				<div class="single-portfolio col-sm-5">
-					<div class="relative">
-						<img class="image img-fluid" src="images/FightLegends/tutorial_announcer.png" alt="">
-						<img class="image img-fluid" src="images/FightLegends/tutorial_combat.png" alt="">
+						<img class="image img-fluid" src="images/FightLegends/cards.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -307,14 +280,22 @@
 			<!-- Chat -->
 			<div class="row grid">
 				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Chat system (mods, block, ban etc)</h3>
 							<li>Created a chat system where players can either comunicate in global channels or send private messages.</li>		
 							<li>Global channels are managed in a server panel, allowing making it easier to create and delete channels.</li>		
 							<li>Players can also block/unblock others and if enabled to be a moderator, they have the ability to ban other players.</li>		
 						</ul>
-					</div>                                         
+					</div>        
+					<div class="lang-es">
+						<ul>
+							<h3>Sistema de chat (moderadores, bloqueo, baneo, etc)</h3>
+							<li>Crear un sistema de chat donde los jugadores pueden comunicarse en canales globales o enviar mensajes privados.</li>
+							<li>Los canales globales son gestionados en un panel de servidor, lo que facilita la creación y eliminación de canales.</li>
+							<li>Los jugadores también pueden bloquear/desbloquear a otros y, si están habilitados como moderadores, tienen la capacidad de banear a otros jugadores.</li>
+						</ul>
+					</div>         
 				</div>
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
@@ -322,16 +303,24 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Shop -->
 			<div class="row grid">	
 				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Game Shop</h3>
-							<li>Implement different shop sections where the player can buy different types of resources.</li>
+							<li>Implement various shop sections where the player can buy different types of resources.</li>
 							<li>Items section, each player has its own catalog of items.</li>
 							<li>Chests section, players can get content with random possibilities.</li>
+						</ul>
+					</div>    
+					<div class="lang-es">	
+						<ul>
+							<h3>Tienda del juego</h3>
+							<li>Implementar varias secciones de tienda donde el jugador puede comprar diferentes tipos de recursos.</li>
+							<li>Sección de objetos, cada jugador tiene su propio catálogo de objetos.</li>
+							<li>Sección de cofres, los jugadores pueden obtener contenido con posibilidades aleatorias.</li>
 						</ul>
 					</div>                                         
 				</div>
@@ -343,16 +332,77 @@
 				</div>
 			</div>
 
+			<!-- Tournaments -->
+			<div class="row grid">
+				<div class="single-portfolio col-sm-7">
+					<div class="lang-en">
+						<ul>
+							<h3>Tournaments and rankings</h3>
+							<li>Made a ranking system where players obtain points from playing a specific game mode. It rewards special icons for the chat.</li>
+							<li>Players can see the current week ranking updating in real time. And also check last weeks positions and the global all time ranking.</li>	
+							<li>In the server, each time the top ranking changes, it sends a push notification to the affected player.</li>
+							<li>Each week, a cron job is scheduled to process, qualify and reward rankings.</li>				
+						</ul>
+					</div>    
+					<div class="lang-es">
+						<ul>
+							<h3>Torneos y clasificaciones</h3>
+							<li>Desarrollar un sistema de clasificación donde los jugadores obtienen puntos al participar en un modo de juego específico. Premia con iconos especiales para el chat.</li>
+							<li>Los jugadores pueden ver la clasificación de la semana que se actualiza en tiempo real. También pueden consultar las posiciones de la semana pasada y la clasificación global de todos los tiempos.</li>	
+							<li>En el servidor, cada vez que cambia la clasificación principal, se envía una notificación push al jugador afectado.</li>
+							<li>Cada semana, se programa una tarea o cron para procesar, calificar y recompensar las clasificaciones.</li>				
+						</ul>
+					</div>                                         
+				</div>
+				<div class="single-portfolio col-sm-5">
+					<div class="relative">
+						<img class="image img-fluid" src="images/FightLegends/tournament.png" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Multiples characters -->
+			<div class="row grid">
+				<div class="single-portfolio col-sm-7">
+					<div class="lang-en">
+						<ul>
+							<h3>Multiple Characters</h3>
+							<li>Developed a multi-character system, enabling players to create, switch, and manage multiple characters.</li>
+							<li>Since the game was designed for one character per user, the biggest challenge was to ensure the changes to the server and database did not affect the production game.</li>
+						</ul>
+					</div>  
+					<div class="lang-es">
+						<ul>
+							<h3>Múltiples Personajes</h3>
+							<li>Desarrollar un sistema de múltiples personajes, permitiendo a los jugadores crear, cambiar y gestionar varios personajes.</li>
+							<li>Dado que el juego estaba diseñado para un solo personaje por usuario, el mayor desafío fue garantizar que los cambios en el servidor y la base de datos no afectaran al juego en producción.</li>
+						</ul>
+					</div>                                           
+				</div>
+				<div class="single-portfolio col-sm-5">
+					<div class="relative">
+						<img class="image img-fluid" src="images/FightLegends/multi_character.png" alt="">
+					</div>
+				</div>
+			</div>
+				
 			<!-- Referral System -->
 			<div class="row grid">	
 				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Referral System</h3>
 							<li>Allows players to invite others and earn rewards.</li>	
 							<li>Each code is generated with 'Hashids', to generate a unique, reversible, and short hash from the user ID.</li>
 						</ul>
-					</div>                                         
+					</div>             
+					<div class="lang-es">	
+						<ul>
+							<h3>Sistema de referidos</h3>
+							<li>Permite a los jugadores invitar a otros y ganar recompensas.</li>	
+							<li>Cada código se genera con 'Hashids', para generar un hash único, reversible y corto a partir del ID de usuario.</li>
+						</ul>
+					</div>                               
 				</div>
 				<div class="single-portfolio col-sm-5">
 					<div class="relative">
@@ -364,11 +414,18 @@
 			<!-- Village -->
 			<div class="row grid">	
 				<div class="single-portfolio col-sm-7">
-					<div class="d-block">
+					<div class="lang-en">
 						<ul>
 							<h3>Village Mode</h3>
-							<li>A village game mode, where players can interact and upgrade buildings that provide different boosts.</li>
+							<li>Players can interact and upgrade buildings that provide different boosts.</li>
 							<li>Focused on decoupling the structure to facilitate the management of each building type.</li>
+						</ul>
+					</div>   
+					<div class="lang-es">	
+						<ul>
+							<h3>Modo Villa</h3>
+							<li>Los jugadores pueden interactuar y mejorar edificios que proporcionan diferentes bonificaciones.</li>
+							<li>Me centré en la desvinculación la estructura para facilitar la gestión de cada tipo de edificio.</li>
 						</ul>
 					</div>                                         
 				</div>
