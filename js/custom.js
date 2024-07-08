@@ -359,7 +359,6 @@ var toggleLanguage = function(changeLanguage = true) {
 	var lang = localStorage.getItem('selectedLanguage') || (userLang.startsWith('en') ? 'en' : 'es');
 
 	//var lang = localStorage.getItem('selectedLanguage') || 'es';
-
 	if(changeLanguage)
 		lang = lang == 'es' ? 'en' : 'es';
 
