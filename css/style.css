@@ -147,10 +147,13 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden; 
+}
   .site-hero, .site-hero .row {
     height: 65vh;
-    min-height: 700px; }
+    min-height: 650px;
+  }
+
   .site-hero:before {
     content: "";
     position: absolute;
@@ -159,7 +162,8 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #1a1a1a; }
+    background: #1a1a1a;
+  }
   .site-hero h1 {
     font-weight: 200;
     margin-bottom: 40px;
@@ -168,7 +172,7 @@ a {
       font-weight: 800; }
     @media (min-width: 768px) {
       .site-hero h1 {
-        font-size: 70px; } }
+        font-size: 60px; } }
   .site-hero h1, .site-hero .lead {
     font-weight: 200;
     color: #fff; }
@@ -180,7 +184,7 @@ a {
     color: rgba(255, 255, 255, 0.5); }
 
 .site-section {
-  padding-top: 4em;
+  padding-top: 0em;
   padding-bottom: 0em; }
 
 .about-me-font {
@@ -636,3 +640,5 @@ a {
 .letter-spacing {
   letter-spacing: .2rem;
   color: rgba(255, 255, 255, 0.5) !important; }
+
+  
