@@ -327,31 +327,31 @@ var portfolioMasonry = function() {
 })();
 
 
-var toggleLanguage = function(changeLanguage = true) {
+// var toggleLanguage = function(changeLanguage = true) {
 
-	var userLang = navigator.language || navigator.userLanguage;
-	var lang = localStorage.getItem('selectedLanguage') || (userLang.startsWith('en') ? 'en' : 'es');
+// 	var userLang = navigator.language || navigator.userLanguage;
+// 	var lang = localStorage.getItem('selectedLanguage') || (userLang.startsWith('en') ? 'en' : 'es');
 
-	//var lang = localStorage.getItem('selectedLanguage') || 'es';
-	if(changeLanguage)
-		lang = lang == 'es' ? 'en' : 'es';
+// 	//var lang = localStorage.getItem('selectedLanguage') || 'es';
+// 	if(changeLanguage)
+// 		lang = lang == 'es' ? 'en' : 'es';
 
-    const elementsEn = document.querySelectorAll('.lang-en');
-    const elementsEs = document.querySelectorAll('.lang-es');
+//     const elementsEn = document.querySelectorAll('.lang-en');
+//     const elementsEs = document.querySelectorAll('.lang-es');
     
-    if (lang === 'en') {
-        elementsEn.forEach(element => element.classList.remove('d-none'));
-        elementsEs.forEach(element => element.classList.add('d-none'));
-    } else if (lang === 'es') {
-        elementsEn.forEach(element => element.classList.add('d-none'));
-        elementsEs.forEach(element => element.classList.remove('d-none'));
-    }
+//     if (lang === 'en') {
+//         elementsEn.forEach(element => element.classList.remove('d-none'));
+//         elementsEs.forEach(element => element.classList.add('d-none'));
+//     } else if (lang === 'es') {
+//         elementsEn.forEach(element => element.classList.add('d-none'));
+//         elementsEs.forEach(element => element.classList.remove('d-none'));
+//     }
 
-    // Save the selected language to localStorage
-    localStorage.setItem('selectedLanguage', lang);
+//     // Save the selected language to localStorage
+//     localStorage.setItem('selectedLanguage', lang);
 
-    document.getElementById('currentLanguageDisplayInNavButton').textContent = lang == 'es' ? 'english' : 'español';
-};
+//     document.getElementById('currentLanguageDisplayInNavButton').textContent = lang == 'es' ? 'english' : 'español';
+// };
 
-// Call toggle language on restart
-toggleLanguage(false);
+// // Call toggle language on restart
+// toggleLanguage(false);
