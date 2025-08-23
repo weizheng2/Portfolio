@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   background: #1a1a1a;
   line-height: 1.7;
   font-size: 16px;
@@ -183,13 +183,15 @@ a {
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.5); }
 
+
 .site-section {
+  scroll-margin-top: 80px;
   padding-top: 0em;
   padding-bottom: 0em; }
 
 .about-me-font {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
 }
   
 .section-heading {
@@ -209,9 +211,7 @@ a {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
 
-.site-section-personal-projects {
-  padding-top: 4em;
-  padding-bottom: 2em; }
+
 
 .lead {
   font-weight: 200;
